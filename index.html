@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    
+    <!-- استيراد مكتبة Tailwind CSS للتنسيق -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- استيراد خط عربي عصري وواضح (Tajawal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white min-h-screen w-full m-0 p-4 flex items-center justify-center overflow-hidden selection:bg-green-100 selection:text-green-900">
+
+    <!-- حاوية الزر الرئيسية المتمركزة في منتصف الشاشة -->
+    <main class="flex items-center justify-center">
+        <a 
+            href="https://whatsapp.com/channel/0029Vb9L8E03bbV1vwn5TF2w" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="اتصل بنا عبر واتساب"
+            class="inline-flex items-center justify-center px-10 py-4 text-xl sm:text-2xl font-bold text-white bg-[#25D366] hover:bg-[#20bd5a] active:bg-[#1da851] rounded-2xl shadow-lg shadow-[#25D366]/30 hover:shadow-xl hover:shadow-[#25D366]/40 transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out focus:outline-none focus:ring-4 focus:ring-[#25D366]/50"
+        >
+            <span>اتصل بنا</span>
+        </a>
+    </main>
+
+</body>
+</html>
